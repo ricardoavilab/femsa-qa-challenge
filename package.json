@@ -6,6 +6,7 @@
   "scripts": {
     "linter": "npx eslint tests",
     "test": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
     "report": "npx playwright show-report"
   },
   "keywords": [],

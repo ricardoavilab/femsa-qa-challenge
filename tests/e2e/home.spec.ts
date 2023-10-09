@@ -13,3 +13,14 @@ test('sucessful login', async ({ page }) => {
   const productsPage = new ProductsPage(page);
   await productsPage.validateHeader();
 });
+
+// this one should fail
+// test('invalid login', async ({ page }) => {
+//   const homePage = new HomePage(page);
+//   await homePage.goto();
+//   await homePage.login(USERNAME, PASSWORD);
+
+//   // validate header
+//   const productsPage = new ProductsPage(page);
+//   await productsPage.validateHeader('invalid header');
+// });

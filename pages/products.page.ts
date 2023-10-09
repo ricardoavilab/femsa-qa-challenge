@@ -9,7 +9,7 @@ export class ProductsPage {
     this.header = page.locator('.title');
   }
 
-  async validateHeader () {
-    await expect(this.header).toHaveText('Products');
+  async validateHeader (header: string = 'Products') {
+    await expect(this.header).toHaveText(header);
   }
 }
