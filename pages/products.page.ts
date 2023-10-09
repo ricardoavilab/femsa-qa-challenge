@@ -10,6 +10,7 @@ export class ProductsPage {
   }
 
   async validateHeader (header: string = 'Products') {
+    await expect(this.header).toBeVisible();
     await expect(this.header).toHaveText(header);
   }
 }

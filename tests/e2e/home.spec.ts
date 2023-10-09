@@ -4,7 +4,7 @@ import { ProductsPage } from '../../pages/products.page';
 import { USERNAME, PASSWORD } from '../../dat-provider';
 
 
-test('sucessful login', async ({ page }) => {
+test('sucessful login @e2e', async ({ page }) => {
   const homePage = new HomePage(page);
   await homePage.goto();
   await homePage.login(USERNAME, PASSWORD);
@@ -15,7 +15,7 @@ test('sucessful login', async ({ page }) => {
 });
 
 // this one should fail
-// test('invalid login', async ({ page }) => {
+// test('invalid login @e2e', async ({ page }) => {
 //   const homePage = new HomePage(page);
 //   await homePage.goto();
 //   await homePage.login(USERNAME, PASSWORD);
