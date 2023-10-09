@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "linter": "npx eslint tests",
-    "test": "npx playwright test"
+    "test": "npx playwright test --project=chromium",
+    "report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",
