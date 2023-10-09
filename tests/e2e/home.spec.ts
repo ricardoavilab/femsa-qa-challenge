@@ -1,9 +1,15 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
+import { HomePage } from '../../pages/home.page';
+import { ProductsPage } from '../../pages/products.page';
+import { USERNAME, PASSWORD } from '../../dat-provider';
 
-test('has title', async ({ page }) => {
-  await page.goto('/');
-});
 
-test('get started link', async ({ page }) => {
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+test('sucessful login', async ({ page }) => {
+  const homePage = new HomePage(page);
+  await homePage.goto();
+  await homePage.login(USERNAME, PASSWORD);
+
+  // validate header
+  const productsPage = new ProductsPage(page);
+  await productsPage.validateHeader();
 });
