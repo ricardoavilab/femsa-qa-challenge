@@ -26,8 +26,9 @@
 ## test cases inicio de sesion
 
 1. sucessful login (all users)
-2. login - invalid password & invalid username
-3. login - invalid password & valid username
-4. login - valid password (case insensitive)
-5. sucessful login - (case insensitive)
-6. click on submit (no password, no username)
+2. valid username (no password)
+3. login - invalid password & invalid username
+4. login - invalid password & valid username
+5. login - valid password (case insensitive)
+6. sucessful login - (case insensitive)
+7. click on submit (no password, no username)
