@@ -21,3 +21,13 @@
 
 - The framework will take the corresponding screenshot when a test failed (test-results folder)
 - The e2e tests will run when creating a new PR (GH workflow)
+
+
+## test cases inicio de sesion
+
+1. sucessful login (all users)
+2. login - invalid password & invalid username
+3. login - invalid password & valid username
+4. login - valid password (case insensitive)
+5. sucessful login - (case insensitive)
+6. click on submit (no password, no username)
